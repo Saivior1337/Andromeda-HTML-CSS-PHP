@@ -1,0 +1,1094 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100;200;300;500;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 1, 59);
+    font-family: 'Anek Kannada';
+}
+
+a { text-decoration: none;}
+
+::-webkit-scrollbar
+{
+    width:7px;
+    background-color:#333; 
+}
+::-webkit-scrollbar-thumb
+{
+    background:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.error-alert_container 
+{
+    display: flex;
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    justify-content: right;
+    z-index: 2000;
+    margin-top: 20px;
+}
+
+.error-alert
+{
+    display: flex;
+    width: 280px;
+    height: 80px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    background-color: rgb(29, 28, 35);
+    animation: fadeInLeft;
+    animation-duration: 1s;
+    position: fixed;
+}
+
+.error-alert-erase
+{
+    display: flex;
+    width: 320px;
+    height: 80px;   
+    background-color: rgb(29, 28, 35);
+    animation: fadeOutLeft;
+    animation-duration: 1s;
+    position: fixed;
+}
+
+.error-title
+{
+    color:rgb(180, 117, 234);
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.error-subtitle
+{
+    color:#fff;
+    opacity: 0.8;
+    margin-left: 20px;
+}
+
+.error-icon_container
+{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    font-size: 35px;
+    color:rgb(180, 117, 234);
+    margin-top: 19px;
+    margin-left: -10px;
+    justify-content: right;
+}
+
+.icon a
+{
+    font-size: 15px;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+
+.page_header
+{
+    overflow: hidden;
+}
+
+.header-container
+{
+    width: 100%;
+}
+
+.header-image
+{
+    display: flex;
+    position: relative;
+
+}
+
+.header-image img 
+{
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+
+.header-logo
+{
+    position: absolute;
+    z-index: 2;
+    color:#fff;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.header-title
+{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.header-subtitle
+{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 140%;
+    opacity: 0.8;
+}
+
+.header-navigation
+{
+    display: flex;
+    width: 100%;
+    background-color: rgb(16, 17, 22);
+    color:#fff;
+}
+
+.header-ul
+{
+    display: inline-flex;
+    width: 100%;
+    padding-top: 5px;
+    font-weight: 300;
+    justify-content: left;
+}
+
+.header-li
+{
+    display: block;
+    margin-left: 15px;
+    opacity: 0.8;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+.header-li a
+{
+    font-weight: normal;
+    color:#fff;
+    text-decoration: none;
+}
+
+.header-li span
+{
+    font-weight: normal;
+    color:#fff;
+    text-decoration: none;
+}
+
+.header-li button
+{
+    border:0px;
+    outline: 0;
+    background-color: rgb(16, 17, 22);
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Anek Kannada';
+    padding: 0;
+}
+
+.header-li button:hover
+{
+    border:0px;
+    background-color: rgb(16, 17, 22);
+    color:fff;
+}
+
+.header-li button:hover > .icon {
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.header-li:hover
+{
+    opacity: 1;
+}
+
+.header-li a:hover > .icon {
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.header-li span:hover > .icon {
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.header-right
+{
+    margin-right: 30px;
+}
+
+.header-right a
+{
+    display: inline-flex;
+    padding-top: 5px;
+    text-decoration: none;
+    color:#D1DF07;
+}
+
+
+.page_body
+{
+    overflow: hidden;
+}
+
+.body-products-logo
+{
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 60px;
+    color:#fff;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.body-products
+{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.body-products-column
+{
+    width: 400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgb(16, 17, 22);
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.body-products-title
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.body-products-subtitle
+{
+    width: 50px;
+    height: 1px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    background-color: #ff0000;
+}
+
+.body-products-li
+{
+    opacity: 0.8;
+}
+
+.body-products-image
+{
+    text-align:center;
+}
+
+
+.body-products-image img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.body-products-ul
+{
+    opacity: 0.8;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.body-products-price
+{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 40px;
+    opacity: 0.8;
+}
+
+.body-products-button
+{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.body-products-button a
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    background-color: #fff;
+    color:#000;
+    opacity: 0.8;
+}
+
+.body-products-button a:hover{ opacity: 1;}
+
+.body__information
+{
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.body__information-container
+{
+    width: 100%;
+}
+
+.body__information-title
+{
+    color:#fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top:70px;
+    margin-left: 70px;
+    display: flex;
+}
+
+.body__information-subtitle
+{
+    margin-top: 20px;
+    margin-left: 70px;
+    color:#fff;
+    font-size: 18px;
+    display: flex;
+}
+
+.body__information-list
+{
+    background-color: rgb(29, 28, 35);
+    margin-top: 60px;
+    color:#fff;
+    font-size: 15px;
+
+}
+
+.body__information-column
+{
+    display: inline-flex;
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+}
+
+.body__information-item
+{
+    display: inline-flex;
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+.body__information-column-title
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: left;
+    padding-left: 70px;
+    text-align: left;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.body__information-icon
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.body__information-text
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: right;
+    padding-right: 70px;
+    opacity: 0.8;
+    text-align: right;
+    font-size: 15px;
+}
+
+.body__information-column:hover >* .desc-icon
+{
+    transition:all .5s ease;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    animation: headShake 1s;
+    color:rgb(180, 117, 234);
+}
+
+.mod
+{
+    background-color: rgb(16, 17, 22);
+}
+
+.desc-icon
+{
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.body__functional
+{
+    background-color: rgb(16, 17, 22);
+    overflow: hidden;
+}
+
+.body__functional-container
+{
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: rgb(16, 17, 22);
+}
+
+.body__functional-items
+{
+    margin-left: 60px;
+}
+
+.body__functional-title
+{
+    color:#fff;
+    opacity: 0.8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.body__functional-subtitle
+{
+    color:#fff;
+    opacity: 0.8;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.body__functional-list
+{
+    display: flex;
+    width: 100%;
+}
+
+.body__functional-list-ul
+{
+    color:#fff;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.page__footer
+{
+    overflow: hidden;
+}
+
+.page__footer-container
+{
+    display: flex;
+    width: 100%;
+    background-color: rgb(29, 28, 35);
+}
+
+.page__footer-items
+{
+    display: inline-flex;
+    width: 100%;
+}
+
+.page__footer-author
+{
+    display: inline-flex;
+    width: 100%;
+    color:#fff;
+    opacity: 0.8;
+    justify-content: left;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.page__footer-author a
+{
+    margin-left: 5px;
+    color:rgb(180, 117, 234);
+    text-decoration: none;
+}
+
+.page__footer-payment
+{
+    display: inline-flex;
+    width: 100%;
+    color:#fff;
+    opacity: 0.8;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+.icon-pay
+{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: -2px;
+    color:#fff;
+}
+
+/*<!------- Support element  ----------!>  */
+
+.support-title
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    color:#fff;
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+
+.support-items
+{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.support-column
+{
+    width: 300px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(16, 17, 22);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.support-column:hover
+{
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.support-column:hover >* .support-icon
+{
+    transition: all .5s ease;
+    color:rgb(180, 117, 234);
+}
+
+.support-icon
+{
+    color:#fff;
+    font-size: 55px;
+    opacity: 0.8;
+}
+
+.support-item_title
+{
+    color:#fff;
+    opacity: 0.8;
+    margin-top: 30px;
+}
+
+.support-extended_container
+{
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.support-extended_items
+{
+    display: flex;
+    width: 100%;
+}
+
+.support-extended_column
+{
+    width: 50%;
+    background-color: rgb(16, 17, 22);
+    padding-bottom: 40px;
+}   
+
+.support-extended_title
+{
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+    color:#fff;
+    opacity: 0.8;
+}
+
+.support-extended_subtitle
+{
+    margin-left: 60px;
+    font-size: 16px;
+    color:#fff;
+    opacity: 0.8;
+}
+
+.ext-mod
+{
+    margin-left: 0px;
+    margin-right: 60px;
+    float: right;
+}
+
+.ext-icon
+{
+    font-size: 55px;
+    margin-top: 15px;
+    color:rgb(180, 117, 234);
+    animation: heartBeat;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.modal-icon
+{
+    color:rgb(180, 117, 234);
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 1100px;
+      margin: 80px auto; /* для отображения модального окна по центру */
+  }
+  .modal-auth
+  {
+    max-width: 500px;
+    text-align: center;
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: rgb(16, 17, 22);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:#fff;
+    opacity: 0.8;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.modal-body-column
+{
+    margin-bottom: 25px;
+}
+
+.modal-body-title
+{
+    color:rgb(180, 117, 234);
+    opacity: 0.8;
+    font-size: 19px;
+}
+
+.modal-body-subtitle
+{
+    color:#fff;
+    opacity: 0.8;
+    font-size: 17px;
+}
+
+.modal-body-input
+{
+    margin-top: 10px;
+}
+
+.modal-body-input input
+{
+    border:0;
+    font-size: 16px;
+    background-color: rgb(29, 28, 35);
+    color:#fff;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.modal-body-buttons
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.modal-body-button
+{
+    opacity: 0.8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border:0;
+}
+
+.modal-body-button:hover
+{
+    opacity: 1;
+}
+
+.modal-body-text
+{
+    float: left;
+    margin-top: 30px;
+    color:#fff;
+    opacity: 0.8;
+    justify-content: left;
+}
+
+.modal-body-text a, span
+{
+    color:rgb(180, 117, 234);
+    cursor: pointer;
+}
+
+
+
+.email-confirmation_container
+{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #A20101;
+    justify-content: center;
+}
+
+.email-confirmation_items
+{
+    text-align: center;
+    color:#fff;
+    opacity: 0.9;
+}
+
+.email-confirmation_title
+{
+    font-size: 22px;
+}
+
+.email-confirmation_subtitle
+{
+    font-size: 18px;
+}
+
+.email-confirmation_text
+{
+    padding-top: 5px;
+}
+
+.email-confirmation_button
+{
+    padding-top: 20px;
+}
+
+.email-confirmation_button button
+{
+    border:0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Anek Kannada';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.email-confirmation_button button:hover
+{
+    transition: all .5s ease;
+    color:#fff;
+    background-color: #01A23C;
+}
+
+.profile_container
+{
+    display: flex;
+    width: 100%;
+    background-color: rgb(29, 28, 35);
+}
+
+.profile_items
+{
+    color:#fff;
+    opacity: 0.8;
+    margin-left: 120px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.profile_logo
+{
+    margin-left: -80px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.modal-body input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.modal-body_items
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.modal-body_items input
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    border:0;
+    outline:0;
+    background-color: rgb(29, 28, 35);
+    color:#fff;
+    opacity: 0.8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-body_items select
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    border:0;
+    outline:0;
+    background-color: rgb(29, 28, 35);
+    color:#fff;
+    opacity: 0.8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-body_items textarea
+{
+    font-family: 'Anek Kannada';
+    resize: none;
+    outline: 0;
+    border:0px;
+    width: 400px;
+    height: 150px;
+    color:#fff;
+    opacity: 0.8;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(29, 28, 35);
+}
+
+.modal-body_items textarea:focus
+{
+    border: 1px solid rgb(180, 117, 234);
+}
+
+.profile_birthday_date span
+{
+    color:#D1DF07;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.profile_shortinf span
+{
+    color:#D1DF07;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.span-icon
+{
+    font-size: 18px;
+}
+
+.span-icon:hover
+{
+    animation: heartBeat;
+    animation-duration: 4s;
+    text-decoration: underline;
+}
+
+.modal-body-birthday_items input:focus, select:focus
+{
+    border: 1px solid rgb(180, 117, 234);
+}
+
+@media (max-width:1000px)
+{
+    .header-image img {object-position: right;}
+}
+
+@media (max-width:390px)
+{
+    .header-title {font-size: 20px; margin-top: 60px;}
+    .header-subtitle {font-size: 16px;}
+    .header-image img { object-position: left; }
+    .header-navigation {justify-content: center; margin: 0; padding: 0;}
+    .header-navigation-profile {justify-content: center; margin: 0; padding: 0;}
+    .header-ul { padding-left:0; margin-right: 0;}
+    .header-li {display:flex; justify-content: center; margin-top: 0px; margin-left: 10px; padding: 0px; font-size: 18px;}
+    .header-li button { font-size: 18px;}
+}
+
+@media (max-width:945px)
+{
+    .body__information-item {padding-top: 0;}
+    .body__information-text {padding-top: 20px;}
+    .body__information-column-title {padding-top: 50px;}
+    .body__information-icon {padding-top: 50px;}
+}
+
+@media (max-width:550px)
+{
+    .body__information-text {opacity: 0; position: absolute; padding: 0; margin: 0;}
+    .body__information-icon {justify-content: right; padding-right: 60px;}
+    .support-column { margin-left: 0px;}
+}
+
+@media (max-width:500px)
+{
+    .body-products-logo {justify-content: center; margin-left: 0; padding-left:0;}
+    .page__footer-author {display:block; margin:0; padding: 0; text-align: center; }
+    .page__footer-payment {display:block; margin:0; padding: 0; text-align: center;}
+    .icon-pay {margin: 0; padding: 0;}
+    .profile_container {justify-content: center;}
+    .profile_items { margin: 0px; padding-left:5px; text-align: center;}
+    .profile_logo {margin: 0; margin-top:20px; margin-bottom: 20px; padding: 0;}
+}
